@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <div class="app-wrapper">
+          <form action="">
+            <h1>Create an Account</h1>
+
+            <div class="form-input">
+              <label for="">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+              />
+
+              <i class="fas fa-eye" id="eye"></i>
+
+              <!-- <small>Error message</small> -->
+
+              <!-- The progress bar -->
+              <div class="progress">
+                <div class="progress-bar" id="password-strength"></div>
+              </div>
+
+              <div class="list">
+                <ul class="form-list">
+                  <li>
+                    <span class="low-upper-case">
+                      <i class="fas fa-circle low"></i> &nbsp; Lower & Uppercase
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="number">
+                      <i class="fas fa-circle num"></i> &nbsp; Number (0-9)
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="special-char">
+                      <i class="fas fa-circle spe"> </i>&nbsp; Special Character
+                      (!@#$%^&*)
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="least-char">
+                      <i class="fas fa-circle les"></i> &nbsp; At least 8
+                      Character
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
